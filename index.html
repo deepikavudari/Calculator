@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <div class="calculator">
+      <p id="disp"></p>
+      <div class="buttons">
+        <button
+          onclick="
+    calculation += '1';
+    disp.textContent = calculation;
+    "
+        >
+          1
+        </button>
+        <button
+          onclick="
+    calculation += '2';
+    disp.textContent = calculation;
+    "
+        >
+          2
+        </button>
+        <button
+          onclick="
+    calculation += '3';
+    disp.textContent = calculation;
+    "
+        >
+          3
+        </button>
+        <button
+          onclick="
+    calculation += '4';
+    disp.textContent = calculation;
+    "
+        >
+          4
+        </button>
+        <button
+          onclick="
+    calculation += '5';
+    disp.textContent = calculation;
+    "
+        >
+          5
+        </button>
+        <button
+          onclick="
+    calculation += '6';
+    disp.textContent = calculation;
+    "
+        >
+          6
+        </button>
+        <button
+          onclick="
+    calculation += '7';
+    disp.textContent = calculation;
+    "
+        >
+          7
+        </button>
+        <button
+          onclick="
+    calculation += '8';
+    disp.textContent = calculation;
+    "
+        >
+          8
+        </button>
+        <button
+          onclick="
+    calculation += '9';
+    disp.textContent = calculation;
+    "
+        >
+          9
+        </button>
+        <button
+          onclick="
+    calculation += '0';
+    disp.textContent = calculation;
+    "
+        >
+          0
+        </button>
+        <button
+          onclick="
+    calculation += '+';
+    disp.textContent = calculation;
+    "
+        >
+          +
+        </button>
+        <button
+          onclick="
+    calculation += '-';
+    disp.textContent = calculation;
+    "
+        >
+          -
+        </button>
+        <button
+          onclick="
+    calculation += '*';
+    disp.textContent = calculation;
+    "
+        >
+          x
+        </button>
+        <button
+          onclick="
+    calculation += '/';
+    disp.textContent = calculation;
+    "
+        >
+          /
+        </button>
+        <button
+          onclick="
+                  try{
+            const ans = eval(calculation);
+    disp.textContent = '';
+    disp.textContent = ans;
+    calculation = '';
+        } catch{
+            disp.textContent = 'Error';
+            calculation = '';
+        }
+    
+    "
+        >
+          =
+        </button>
+        <button
+          onclick="
+     calculation = '';
+     disp.textContent = calculation;
+     "
+        >
+          Clear
+        </button>
+        <button
+          onclick="
+     calculation = calculation.substring(0,calculation.length-1);
+     disp.textContent = calculation;
+     "
+        >
+          Del
+        </button>
+      </div>
+    </div>
+
+    <script>
+      let calculation = "";
+      const disp = document.getElementById("disp");
+    </script>
+  </body>
+</html>
